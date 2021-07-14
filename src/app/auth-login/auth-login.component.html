@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-card-title>Авторизация</mat-card-title>
+<mat-card-content>
+<form [formGroup]="loginForm" (ngSubmit)="submit()">
+  <p>
+    <mat-form-field>
+      <input type="text" matInput placeholder="Логин" formControlName="login">
+    </mat-form-field>
+  </p>
+
+  <p>
+    <mat-form-field>
+      <input type="password" matInput placeholder="Пароль" formControlName="password">
+    </mat-form-field>
+  </p>
+  <div class="button">
+    <button type="submit" mat-button>Вход</button>
+    <button type='button' mat-button (click)='test()'>Test</button>
+  </div>
+
+</form>
+</mat-card-content>
+</mat-card>
